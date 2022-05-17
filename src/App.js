@@ -1,14 +1,9 @@
+import Header from './components/Header';
+
 function App() {
-  const name = 'Jesus';
   return (
-    <div className="App">
-      <h1>
-        Thank you,
-        {' '}
-        {name}
-        {' '}
-        and Mary
-      </h1>
+    <div className="container">
+      <Header title="Task tracker" />
     </div>
   );
 }

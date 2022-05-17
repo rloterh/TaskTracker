@@ -1,11 +1,15 @@
-import React from 'react'
+import PropTypes from 'prop-types';
+import Button from './Button';
 
-const Header = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const Header = ({ title }) => (
+  <header>
+    <h1>{title}</h1>
+    <Button text="Add" />
+  </header>
+);
 
-export default Header
+Header.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
+export default Header;
